@@ -9,31 +9,43 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./build/tailwind.css">
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
 </head>
 
-<body class="dark">
+<body
+  class="bg-body-bg-bottom bg-contain bg-no-repeat font-body text-base h-screen flex justify-center items-center bg-cyan-dark">
+  <div class="bg-white w-11/12 max-w-sm text-center rounded-lg overflow-hidden">
+    <div class="h-72   bg-card-bg bg-no-repeat bg-top bg-contain pt-24 ">
+      <img class="m-auto border-solid border-white border-4 rounded-full" src="./images/image-victor.jpg"
+        alt="victor in white top">
+      <p class="leading-none mt-6 mb-3 text-blue-dark font-bold">Victor Crest <span
+          class="font-normal text-gray-blue-dark">26</span></p>
+      <p class="leading-none text-sm text-gray-blue-dark">London</p>
+    </div>
+    <div class="flex justify-around py-4 border-solid border-grey-dark border-t">
+      <span>
+        <h1 class="font-bold"> 80K </h1>
+        <p class="text-2xs tracking-wider text-grey-dark">Followers</p>
+      </span>
 
-  Victor Crest
-  26
-  London
+      <span>
+        <h1 class="font-bold"> 803K </h1>
+        <p class="text-2xs tracking-wider text-grey-dark">Likes</p>
+      </span>
 
-  80K
-  Followers
+      <span>
+        <h1 class="font-bold"> 1.4K </h1>
+        <p class="text-2xs tracking-wider text-grey-dark">Photos</p>
+      </span>
+    </div>
 
-  803K
-  Likes
-
-  1.4K
-  Photos
-  s
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
   </div>
+
+
 </body>
 
 </html>

@@ -546,6 +546,10 @@ video {
   height: auto;
 }
 
+h1 {
+  font-size: 1.5rem;
+}
+
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -4308,6 +4312,18 @@ video {
 
 .bg-gradient-to-tl {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+}
+
+.bg-card-bg {
+  background-image: url('../images/bg-pattern-card.svg');
+}
+
+.bg-body-bg-bottom {
+  background-image: url('../images/bg-pattern-bottom.svg');
+}
+
+.bg-body-bg-top {
+  background-image: url('../images/bg-pattern-top.svg');
 }
 
 .from-transparent {
@@ -11813,18 +11829,15 @@ video {
 }
 
 .text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: .875rem;
 }
 
 .text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 1rem;
 }
 
 .text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.125rem;
 }
 
 .text-lg {
@@ -11834,37 +11847,30 @@ video {
 
 .text-xl {
   font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .text-2xl {
   font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-3xl {
   font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .text-4xl {
   font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-5xl {
   font-size: 3rem;
-  line-height: 1;
 }
 
 .text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
+  font-size: 4rem;
 }
 
 .text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
+  font-size: 5rem;
 }
 
 .text-8xl {
@@ -11875,6 +11881,10 @@ video {
 .text-9xl {
   font-size: 8rem;
   line-height: 1;
+}
+
+.text-2xs {
+  font-size: .75rem;
 }
 
 .leading-3 {
@@ -14324,7 +14334,7 @@ video {
 }
 
 .min-h-0 {
-  min-height: 0px;
+  min-height: 0;
 }
 
 .min-h-full {
@@ -14333,6 +14343,18 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-1\/4 {
+  min-height: 25%;
+}
+
+.min-h-1\/2 {
+  min-height: 50%;
+}
+
+.min-h-3\/4 {
+  min-height: 75%;
 }
 
 .min-w-0 {
@@ -35640,6 +35662,18 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .sm\:bg-card-bg {
+    background-image: url('../images/bg-pattern-card.svg');
+  }
+
+  .sm\:bg-body-bg-bottom {
+    background-image: url('../images/bg-pattern-bottom.svg');
+  }
+
+  .sm\:bg-body-bg-top {
+    background-image: url('../images/bg-pattern-top.svg');
+  }
+
   .sm\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -43143,18 +43177,15 @@ video {
   }
 
   .sm\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: .875rem;
   }
 
   .sm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+    font-size: 1rem;
   }
 
   .sm\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.125rem;
   }
 
   .sm\:text-lg {
@@ -43164,37 +43195,30 @@ video {
 
   .sm\:text-xl {
     font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 
   .sm\:text-2xl {
     font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .sm\:text-3xl {
     font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .sm\:text-4xl {
     font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .sm\:text-5xl {
     font-size: 3rem;
-    line-height: 1;
   }
 
   .sm\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
+    font-size: 4rem;
   }
 
   .sm\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
+    font-size: 5rem;
   }
 
   .sm\:text-8xl {
@@ -43205,6 +43229,10 @@ video {
   .sm\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .sm\:text-2xs {
+    font-size: .75rem;
   }
 
   .sm\:leading-3 {
@@ -45654,7 +45682,7 @@ video {
   }
 
   .sm\:min-h-0 {
-    min-height: 0px;
+    min-height: 0;
   }
 
   .sm\:min-h-full {
@@ -45663,6 +45691,18 @@ video {
 
   .sm\:min-h-screen {
     min-height: 100vh;
+  }
+
+  .sm\:min-h-1\/4 {
+    min-height: 25%;
+  }
+
+  .sm\:min-h-1\/2 {
+    min-height: 50%;
+  }
+
+  .sm\:min-h-3\/4 {
+    min-height: 75%;
   }
 
   .sm\:min-w-0 {
@@ -66892,6 +66932,18 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .md\:bg-card-bg {
+    background-image: url('../images/bg-pattern-card.svg');
+  }
+
+  .md\:bg-body-bg-bottom {
+    background-image: url('../images/bg-pattern-bottom.svg');
+  }
+
+  .md\:bg-body-bg-top {
+    background-image: url('../images/bg-pattern-top.svg');
+  }
+
   .md\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -74395,18 +74447,15 @@ video {
   }
 
   .md\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: .875rem;
   }
 
   .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+    font-size: 1rem;
   }
 
   .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.125rem;
   }
 
   .md\:text-lg {
@@ -74416,37 +74465,30 @@ video {
 
   .md\:text-xl {
     font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 
   .md\:text-2xl {
     font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .md\:text-3xl {
     font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .md\:text-4xl {
     font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .md\:text-5xl {
     font-size: 3rem;
-    line-height: 1;
   }
 
   .md\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
+    font-size: 4rem;
   }
 
   .md\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
+    font-size: 5rem;
   }
 
   .md\:text-8xl {
@@ -74457,6 +74499,10 @@ video {
   .md\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .md\:text-2xs {
+    font-size: .75rem;
   }
 
   .md\:leading-3 {
@@ -76906,7 +76952,7 @@ video {
   }
 
   .md\:min-h-0 {
-    min-height: 0px;
+    min-height: 0;
   }
 
   .md\:min-h-full {
@@ -76915,6 +76961,18 @@ video {
 
   .md\:min-h-screen {
     min-height: 100vh;
+  }
+
+  .md\:min-h-1\/4 {
+    min-height: 25%;
+  }
+
+  .md\:min-h-1\/2 {
+    min-height: 50%;
+  }
+
+  .md\:min-h-3\/4 {
+    min-height: 75%;
   }
 
   .md\:min-w-0 {
@@ -98144,6 +98202,18 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .lg\:bg-card-bg {
+    background-image: url('../images/bg-pattern-card.svg');
+  }
+
+  .lg\:bg-body-bg-bottom {
+    background-image: url('../images/bg-pattern-bottom.svg');
+  }
+
+  .lg\:bg-body-bg-top {
+    background-image: url('../images/bg-pattern-top.svg');
+  }
+
   .lg\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -105647,18 +105717,15 @@ video {
   }
 
   .lg\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: .875rem;
   }
 
   .lg\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+    font-size: 1rem;
   }
 
   .lg\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.125rem;
   }
 
   .lg\:text-lg {
@@ -105668,37 +105735,30 @@ video {
 
   .lg\:text-xl {
     font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 
   .lg\:text-2xl {
     font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .lg\:text-3xl {
     font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .lg\:text-4xl {
     font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .lg\:text-5xl {
     font-size: 3rem;
-    line-height: 1;
   }
 
   .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
+    font-size: 4rem;
   }
 
   .lg\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
+    font-size: 5rem;
   }
 
   .lg\:text-8xl {
@@ -105709,6 +105769,10 @@ video {
   .lg\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .lg\:text-2xs {
+    font-size: .75rem;
   }
 
   .lg\:leading-3 {
@@ -108158,7 +108222,7 @@ video {
   }
 
   .lg\:min-h-0 {
-    min-height: 0px;
+    min-height: 0;
   }
 
   .lg\:min-h-full {
@@ -108167,6 +108231,18 @@ video {
 
   .lg\:min-h-screen {
     min-height: 100vh;
+  }
+
+  .lg\:min-h-1\/4 {
+    min-height: 25%;
+  }
+
+  .lg\:min-h-1\/2 {
+    min-height: 50%;
+  }
+
+  .lg\:min-h-3\/4 {
+    min-height: 75%;
   }
 
   .lg\:min-w-0 {
@@ -129396,6 +129472,18 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .xl\:bg-card-bg {
+    background-image: url('../images/bg-pattern-card.svg');
+  }
+
+  .xl\:bg-body-bg-bottom {
+    background-image: url('../images/bg-pattern-bottom.svg');
+  }
+
+  .xl\:bg-body-bg-top {
+    background-image: url('../images/bg-pattern-top.svg');
+  }
+
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -136899,18 +136987,15 @@ video {
   }
 
   .xl\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: .875rem;
   }
 
   .xl\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+    font-size: 1rem;
   }
 
   .xl\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.125rem;
   }
 
   .xl\:text-lg {
@@ -136920,37 +137005,30 @@ video {
 
   .xl\:text-xl {
     font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 
   .xl\:text-2xl {
     font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .xl\:text-3xl {
     font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .xl\:text-4xl {
     font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .xl\:text-5xl {
     font-size: 3rem;
-    line-height: 1;
   }
 
   .xl\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
+    font-size: 4rem;
   }
 
   .xl\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
+    font-size: 5rem;
   }
 
   .xl\:text-8xl {
@@ -136961,6 +137039,10 @@ video {
   .xl\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .xl\:text-2xs {
+    font-size: .75rem;
   }
 
   .xl\:leading-3 {
@@ -139410,7 +139492,7 @@ video {
   }
 
   .xl\:min-h-0 {
-    min-height: 0px;
+    min-height: 0;
   }
 
   .xl\:min-h-full {
@@ -139419,6 +139501,18 @@ video {
 
   .xl\:min-h-screen {
     min-height: 100vh;
+  }
+
+  .xl\:min-h-1\/4 {
+    min-height: 25%;
+  }
+
+  .xl\:min-h-1\/2 {
+    min-height: 50%;
+  }
+
+  .xl\:min-h-3\/4 {
+    min-height: 75%;
   }
 
   .xl\:min-w-0 {
@@ -160648,6 +160742,18 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .\32xl\:bg-card-bg {
+    background-image: url('../images/bg-pattern-card.svg');
+  }
+
+  .\32xl\:bg-body-bg-bottom {
+    background-image: url('../images/bg-pattern-bottom.svg');
+  }
+
+  .\32xl\:bg-body-bg-top {
+    background-image: url('../images/bg-pattern-top.svg');
+  }
+
   .\32xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -168151,18 +168257,15 @@ video {
   }
 
   .\32xl\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: .875rem;
   }
 
   .\32xl\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+    font-size: 1rem;
   }
 
   .\32xl\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.125rem;
   }
 
   .\32xl\:text-lg {
@@ -168172,37 +168275,30 @@ video {
 
   .\32xl\:text-xl {
     font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 
   .\32xl\:text-2xl {
     font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .\32xl\:text-3xl {
     font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .\32xl\:text-4xl {
     font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .\32xl\:text-5xl {
     font-size: 3rem;
-    line-height: 1;
   }
 
   .\32xl\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
+    font-size: 4rem;
   }
 
   .\32xl\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
+    font-size: 5rem;
   }
 
   .\32xl\:text-8xl {
@@ -168213,6 +168309,10 @@ video {
   .\32xl\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .\32xl\:text-2xs {
+    font-size: .75rem;
   }
 
   .\32xl\:leading-3 {
@@ -170662,7 +170762,7 @@ video {
   }
 
   .\32xl\:min-h-0 {
-    min-height: 0px;
+    min-height: 0;
   }
 
   .\32xl\:min-h-full {
@@ -170671,6 +170771,18 @@ video {
 
   .\32xl\:min-h-screen {
     min-height: 100vh;
+  }
+
+  .\32xl\:min-h-1\/4 {
+    min-height: 25%;
+  }
+
+  .\32xl\:min-h-1\/2 {
+    min-height: 50%;
+  }
+
+  .\32xl\:min-h-3\/4 {
+    min-height: 75%;
   }
 
   .\32xl\:min-w-0 {
