@@ -1,23 +1,24 @@
 {
-  "name": "profile-card-component-main",
-  "version": "1.0.0",
-  "description": "![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)",
-  "main": "index.js",
-  "dependencies": {
-    "autoprefixer": "^10.0.4",
-    "postcss": "^8.1.13",
-    "postcss-cli": "^8.3.0",
-    "tailwindcss": "^2.0.1",
-    "tailwindcss-aspect-ratio": "^3.0.0"
-  },
-  "devDependencies": {
-    "tailwindcss-pseudo-elements": "^1.5.0"
-  },
-  "scripts": {
-    "build": "postcss css/tailwind.css -o public/build/tailwind.css",
-    "watch": "postcss css/tailwind.css -o public/build/tailwind.css --watch"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+	"name": "profile-card-component-main",
+	"version": "1.0.0",
+	"description": "![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)",
+	"main": "index.js",
+	"dependencies": {
+		"autoprefixer": "^10.0.4",
+		"postcss": "^8.1.13",
+		"postcss-cli": "^8.3.0",
+		"tailwindcss": "^2.0.1",
+		"tailwindcss-aspect-ratio": "^3.0.0"
+	},
+	"devDependencies": {
+		"tailwindcss-pseudo-elements": "^1.5.0"
+	},
+	"scripts": {
+		"build:css": "tailwind build css/tailwind.css -o public/build/tailwind.css",
+		"build": "set NODE_ENV=production&& npm run build:css",
+		"watch": "postcss css/tailwind.css -o public/build/tailwind.css --watch"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
 }

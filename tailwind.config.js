@@ -1,10 +1,15 @@
-// const plugin = require('tailwindcss/plugin')
+ const plugin = require('tailwindcss/plugin')
 module.exports = {
-  purge: [ ],
+  purge: {
+   mode: 'all',
+    content: ['./public/index.html']
+  },
   darkMode: false, // or 'media' or 'class'
+ corePlugins: {
+    animation: false,
+  },
   theme: {
     extend: {
-     
       colors: {
        "cyan-dark": 'hsl(185, 75%, 39%)',
        "blue-dark": "hsl(229, 23%, 23%)",
@@ -43,5 +48,46 @@ module.exports = {
   },
   variants: {
   },
-  plugin: []
+  plugins: [
+    require('tailwindcss-pseudo-elements'),
+    // This plugin is useful in combination with tailwindcss-aspect-ratio.
+    plugin(function ({ addUtilities }) {
+      addUtilities(
+        {
+          '.empty-content': {
+            content: "''",
+          },
+          '.fill-parent': {
+            position: "absolute",
+            width: "100%",
+            'padding-bottom': "100%",
+             'z-index':"-1",
+              },
+          '.top-left': {
+            top: '0',
+            left: '0',
+           
+          },
+          '.bottom-right': {
+            bottom: '0',
+            right: '0',
+          },
+          '.bg':{
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          },
+          '.body-top-bg': {
+            transform: "translate(-50%, -50%) rotate(-15deg)",
+            backgroundImage: "url('../images/bg-pattern-top.svg')",
+          },
+          '.body-btm-bg': {
+             transform: "translate(50%, 50%) rotate(-75deg)",
+            backgroundImage: "url('../images/bg-pattern-bottom.svg')",
+          
+          }
+        },
+        ['before','after']
+      )
+    }),
+  ],
 }
