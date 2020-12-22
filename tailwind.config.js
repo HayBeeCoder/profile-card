@@ -4,7 +4,7 @@ module.exports = {
    mode: 'all',
     content: ['./public/index.html']
   },
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false, 
  corePlugins: {
     animation: false,
   },
