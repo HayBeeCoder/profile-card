@@ -8,14 +8,12 @@
 		"postcss": "^8.1.13",
 		"postcss-cli": "^8.3.0",
 		"tailwindcss": "^2.0.1",
-		"tailwindcss-aspect-ratio": "^3.0.0"
-	},
-	"devDependencies": {
+		"tailwindcss-aspect-ratio": "^3.0.0",
 		"tailwindcss-pseudo-elements": "^1.5.0"
 	},
 	"scripts": {
 		"build:css": "tailwind build css/tailwind.css -o public/build/tailwind.css",
-		"build": "set NODE_ENV=production&& npm run build:css",
+		"build": "npm run build:css",
 		"watch": "postcss css/tailwind.css -o public/build/tailwind.css --watch"
 	},
 	"keywords": [],
